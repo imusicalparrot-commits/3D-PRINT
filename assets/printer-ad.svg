@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B1916"/>
+      <stop offset="1" stop-color="#2C2722"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="760" fill="url(#g)"/>
+  <g fill="none" stroke="#C2603F" stroke-width="2" opacity=".9">
+    <rect x="60" y="250" width="480" height="300" rx="22"/>
+    <line x1="60" y1="330" x2="540" y2="330"/>
+  </g>
+  <g stroke="#C2603F" stroke-width="14" stroke-linecap="round" fill="none" opacity=".95">
+    <path d="M210 470 l40 -40 l40 40 l40 -60 l40 60"/>
+    <line x1="170" y1="430" x2="430" y2="430"/>
+  </g>
+  <circle cx="300" cy="180" r="46" fill="none" stroke="#C2603F" stroke-width="6"/>
+  <text x="300" y="600" fill="#FBF9F4" font-family="Georgia, serif" font-size="30" font-weight="600" text-anchor="middle">Your 3D Printer</text>
+  <text x="300" y="636" fill="#C9A27E" font-family="Arial, sans-serif" font-size="16" letter-spacing="3" text-anchor="middle">SPONSORED · REPLACE ME</text>
+</svg>

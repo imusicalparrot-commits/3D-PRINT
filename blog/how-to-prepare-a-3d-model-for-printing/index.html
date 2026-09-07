@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Prepare a 3D Model for Printing: A Step-by-Step Checklist | 3D PRINT</title>
+<meta name="description" content="Manifold checks, wall thickness, orientation, supports and slicer settings — the exact order of operations before you press print.">
+<meta property="og:title" content="How to Prepare a 3D Model for Printing: A Step-by-Step Checklist | 3D PRINT">
+<meta property="og:description" content="Manifold checks, wall thickness, orientation, supports and slicer settings — the exact order of operations before you press print.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/site.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Prepare a 3D Model for Printing: A Step-by-Step Checklist","description":"Manifold checks, wall thickness, orientation, supports and slicer settings — the exact order of operations before you press print.","datePublished":"2026-09-04","author":{"@type":"Organization","name":"3D PRINT"}}</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-309B3GG9D5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-309B3GG9D5');
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="../../"><span class="brand-mark">3D&nbsp;</span><span class="brand-accent">PRINT</span></a>
+      <nav class="nav-menu" aria-label="Main">
+        <div class="dd">
+          <button class="dd-btn" type="button">Themes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="dd-panel">
+            <div class="dd-card">
+          <a class="dd-item" href="../../christmas/">
+            <span class="dd-ico">XMAS</span>
+            <span><b>Christmas &amp; Winter</b><span>17 models</span></span>
+          </a>
+          <a class="dd-item" href="../../halloween/">
+            <span class="dd-ico">HWEN</span>
+            <span><b>Halloween &amp; Spooky</b><span>22 models</span></span>
+          </a>
+          <a class="dd-item" href="../../easter/">
+            <span class="dd-ico">EAST</span>
+            <span><b>Easter &amp; Spring</b><span>15 models</span></span>
+          </a>
+          <a class="dd-item" href="../../valentine/">
+            <span class="dd-ico">VAL</span>
+            <span><b>Valentine's &amp; Wedding</b><span>9 models</span></span>
+          </a>
+          <a class="dd-item" href="../../dragons-fantasy/">
+            <span class="dd-ico">DRGN</span>
+            <span><b>Dragons &amp; Fantasy</b><span>18 models</span></span>
+          </a>
+          <a class="dd-item" href="../../flexi-toys/">
+            <span class="dd-ico">FLXI</span>
+            <span><b>Flexi Toys &amp; Learning</b><span>17 models</span></span>
+          </a>
+          <a class="dd-item" href="../../lamps-lights/">
+            <span class="dd-ico">LAMP</span>
+            <span><b>Lamps &amp; Night Lights</b><span>10 models</span></span>
+          </a>
+          <a class="dd-item" href="../../organizers/">
+            <span class="dd-ico">ORG</span>
+            <span><b>Desk &amp; Home Organizers</b><span>23 models</span></span>
+          </a>
+          <a class="dd-item" href="../../keychains-accessories/">
+            <span class="dd-ico">KEY</span>
+            <span><b>Keychains &amp; Craft Tools</b><span>28 models</span></span>
+          </a>
+          <a class="dd-item" href="../../decor-planters/">
+            <span class="dd-ico">DECO</span>
+            <span><b>Decor, Planters &amp; Figurines</b><span>22 models</span></span>
+          </a>
+          <a class="dd-item" href="../../gothic-dark/">
+            <span class="dd-ico">GOTH</span>
+            <span><b>Gothic &amp; Dark Aesthetic</b><span>8 models</span></span>
+          </a>
+          <a class="dd-item" href="../../kawaii-cute/">
+            <span class="dd-ico">KAWA</span>
+            <span><b>Kawaii &amp; Cute</b><span>9 models</span></span>
+          </a>
+          </div>
+        </div>
+        </div>
+        <div class="dd"><a class="dd-btn" href="../../blog/">Blog</a></div>
+        <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Menu">
+          <span class="burger-label">Menu</span>
+          <span class="burger-icon"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M7.33 16V0h1.34v16H7.33z"/><path d="M0 7.33V8.67h16V7.33H0z"/></svg></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <nav class="mnav" id="mobileNav" aria-hidden="true">
+    <div class="mnav-overlay" data-mnav-close></div>
+    <div class="mnav-panel">
+      <div class="mnav-layer l2"></div>
+      <div class="mnav-layer l3"></div>
+      <div class="mnav-layer l1"></div>
+      <div class="mnav-top">
+        <a class="brand" href="../../"><span class="brand-mark">3D&nbsp;</span><span class="brand-accent">PRINT</span></a>
+        <button class="mnav-close" data-mnav-close aria-label="Close menu"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 2l12 12M14 2L2 14"/></svg></button>
+      </div>
+      <ul class="mnav-list">
+        <li style="--i:0"><a href="../../">Home <span class="cnt">START</span></a></li>
+        <li style="--i:1"><a href="../../blog/">Blog <span class="cnt">GUIDES</span></a></li>
+        <li class="mnav-sep" aria-hidden="true"></li>
+        <li style="--i:2"><a href="../../christmas/">Christmas & Winter <span class="cnt">17</span></a></li>
+        <li style="--i:3"><a href="../../halloween/">Halloween & Spooky <span class="cnt">22</span></a></li>
+        <li style="--i:4"><a href="../../easter/">Easter & Spring <span class="cnt">15</span></a></li>
+        <li style="--i:5"><a href="../../valentine/">Valentine's & Wedding <span class="cnt">9</span></a></li>
+        <li style="--i:6"><a href="../../dragons-fantasy/">Dragons & Fantasy <span class="cnt">18</span></a></li>
+        <li style="--i:7"><a href="../../flexi-toys/">Flexi Toys & Learning <span class="cnt">17</span></a></li>
+        <li style="--i:8"><a href="../../lamps-lights/">Lamps & Night Lights <span class="cnt">10</span></a></li>
+        <li style="--i:9"><a href="../../organizers/">Desk & Home Organizers <span class="cnt">23</span></a></li>
+        <li style="--i:10"><a href="../../keychains-accessories/">Keychains & Craft Tools <span class="cnt">28</span></a></li>
+        <li style="--i:11"><a href="../../decor-planters/">Decor, Planters & Figurines <span class="cnt">22</span></a></li>
+        <li style="--i:12"><a href="../../gothic-dark/">Gothic & Dark Aesthetic <span class="cnt">8</span></a></li>
+        <li style="--i:13"><a href="../../kawaii-cute/">Kawaii & Cute <span class="cnt">9</span></a></li>
+      </ul>
+    </div>
+  </nav>
+<main>
+  <div class="layout">
+    <div class="main article">
+      <a class="a-back" href="../">← All guides</a>
+      <span class="overline">Guide</span>
+      <h1 class="headline">How to Prepare a 3D Model for Printing: A Step-by-Step Checklist</h1>
+      <div class="a-meta"><span>2026-09-04</span><span>6 min read</span></div>
+      <div class="a-body">
+
+      <p>Most failed prints are not slicer problems — they are model problems that only show up at the nozzle. Run any file through this checklist, in this order, and the success rate jumps immediately.</p>
+      <h2>1. Start from a sound mesh</h2>
+      <p>A printable model has to be watertight: every edge shared by exactly two faces, no holes, no flipped normals. Marketplaces usually curate this, but free downloads and self-made scans often are not. Quick checks: run the file through the analysis pass in your slicer, or open it in Meshmixer and hit repair. If the slicer reports "non-manifold" or "holes detected", fix before slicing — never hope.</p>
+      <div class="a-callout"><b>Rule of thumb:</b> if the preview looks wrong — missing walls, infill floating inside solid areas — trust the preview, not your optimism.</div>
+      <h2>2. Confirm scale and units</h2>
+      <p>STL files carry no units, and some models arrive in inches that look like millimeters. Drop a 20&nbsp;mm calibration cube next to the import, or sanity-check a known detail — a phone stand should be roughly phone-sized. For anything with moving or mating parts, add 0.2–0.4&nbsp;mm of clearance per side.</p>
+      <h2>3. Respect wall thickness</h2>
+      <p>With a standard 0.4&nbsp;mm nozzle, keep walls at least 1.6&nbsp;mm — ideally a multiple of your line width. Thin sculptural fins, like feathers on angels or petals on vases, are fine as long as they carry no load.</p>
+      <h2>4. Choose orientation deliberately</h2>
+      <ul>
+        <li><b>Strength:</b> layers are the weak plane. Load-bearing parts want forces running parallel to layers, not across them.</li>
+        <li><b>Supports:</b> orient overhangs so supports touch faces you will hide or sand later.</li>
+        <li><b>Print-in-place:</b> articulated models have baked-in clearances. Print them in the documented orientation — rotating them "for a better fit" usually welds the joints solid.</li>
+      </ul>
+      <h2>5. Slice with intent, not defaults</h2>
+      <p>0.2&nbsp;mm layers are the honest default. Drop to 0.12&nbsp;mm for display pieces with fine relief; raise infill from decorative 10–15% to 30%+ for anything that holds weight. Tall, thin parts want a brim. Prints that must survive handling deserve 3–4 wall loops.</p>
+      <h2>6. Supervise the first layer, then walk away</h2>
+      <p>Ninety percent of prints die in the first ten minutes. Level the bed, set the Z-offset, watch two layers go down, only then leave. Ready to test the checklist? Pick something small from <a href="../../keychains-accessories/">Keychains &amp; Craft Tools</a>, or go straight for the crowd-pleasers in <a href="../../flexi-toys/">Flexi Toys &amp; Learning</a>.</p>
+      </div>
+      <div class="a-nav">
+        <a href="../print-speed-vs-quality/">← Print Speed vs Quality: When Fast Is Actually Fine</a>
+        <a href="../3d-printing-software-explained/">3D Printing Software, Explained: Modeling, Repair and Slicing →</a>
+      </div>
+      <section class="related-themes">
+        <h2>Put it into practice</h2>
+        <div class="rt-grid">
+          <a class="rt-card" href="../../keychains-accessories/"><b>Keychains &amp; Craft Tools</b><span>28 models</span></a>
+          <a class="rt-card" href="../../flexi-toys/"><b>Flexi Toys &amp; Learning</b><span>17 models</span></a>
+          <a class="rt-card" href="../../organizers/"><b>Desk &amp; Home Organizers</b><span>23 models</span></a>
+        </div>
+      </section>
+    </div>
+    <aside class="ad-rail">
+      <a class="card3d" href="https://rzekl.com/g/1e8d11449451da3d44eb16525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fw%2Fwholesale-3D-Printer.html" target="_blank" rel="nofollow sponsored noopener noreferrer" aria-label="Shop 3D printers on AliExpress">
+        <span class="c3d-imgwrap"><img class="c3d-img" src="../../assets/printer-ad.webp" alt="3D printers" loading="lazy" onerror="this.onerror=null;this.src='../../assets/printer-ad.svg'"></span>
+        <span class="c3d-shade"></span>
+        <span class="c3d-content">
+          <span class="c3d-head">
+            <span>
+              <h3>3D Printers</h3>
+              <p>Filaments &amp; accessories too</p>
+            </span>
+            <span class="c3d-tag">AD</span>
+          </span>
+          <span class="c3d-pill">Shop printers →</span>
+          <span class="c3d-dots"><i class="on"></i><i></i><i></i><i></i></span>
+        </span>
+      </a>
+    </aside>
+  </div>
+</main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <div class="f-brand">3D<b>PRINT</b></div>
+        <p>A curated index of printable 3D models across the seasons and the home. Pick a theme, find a model, and start printing.</p>
+        <div class="f-links">
+          <a href="../../">Home</a>
+          <a href="../../blog/">Blog</a>
+          <a href="../../privacy/">Privacy &amp; Cookies</a>
+          <a href="../../terms/">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
